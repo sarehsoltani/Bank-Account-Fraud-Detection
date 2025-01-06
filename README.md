@@ -27,7 +27,39 @@ The BAFDataset class provides a convenient way to load, preprocess, and split th
 * load_baf(file_path): This function loads the specified subset of the BAF dataset as a pandas DataFrame. The available subsets are 'Base', 'Variant I', 'Variant II', 'Variant III', 'Variant IV', and 'Variant V'.
 * train_test_split(df, month): This function splits the BAF dataset into train and test sets based on the specified month.
 * one_hot_encode_categorical(X_train, X_test): This function preprocesses the categorical features in the BAF dataset by one-hot encoding them.
-* 
+  
 The BAFDataset class streamlines the process of preparing the BAF dataset for machine learning experiments, handling loading, train-test splitting, and preprocessing tasks in a clear and organized manner.
+
+# Models for Anomaly Detection
+
+## Logistic Regression (Supervised)
+Logistic regression is a popular statistical model used for binary classification tasks. It estimates the probability that an observation belongs to a certain class based on a set of input features.
+
+## Random Forest (Supervised)
+Random forest is a powerful ensemble learning algorithm used for both classification and regression tasks. It combines multiple decision trees to make predictions.
+
+## XGBoost (Supervised)
+XGBoost (Extreme Gradient Boosting) is an advanced implementation of gradient boosting, known for its exceptional performance and efficiency.
+
+## CatBoost (Supervised)
+CatBoost is a gradient boosting framework developed by Yandex that is particularly well-suited for working with categorical features.
+
+## Light GBM (Supervised)
+Light GBM (Light Gradient Boosting Machine) is a gradient boosting framework known for its high performance and efficiency for machine learning tasks.
+
+## TabNet (Supervised and Semi-supervised)
+TabNet presents an innovative approach that bridges the gap between Decision Trees (DTs) and Deep Neural Networks (DNNs).
+
+## Autoencoder (AE) (Unsupervised)
+The autoencoder is a neural network designed to learn a compressed representation of input data and reconstruct the original data from this representation.
+
+## Isolation Forest (IF) (Unsupervised)
+The Isolation Forest algorithm is used for spotting anomalies within datasets. It constructs a forest of isolation trees where data points are partitioned based on random feature choices and values.
+
+## ICL (Unsupervised)
+ICL focuses on out-of-class sample detection in tabular data, aiming to capture the structure of single training class samples by learning mappings that maximize the mutual information between each sample and the masked-out portion.
+
+
+
 
 
